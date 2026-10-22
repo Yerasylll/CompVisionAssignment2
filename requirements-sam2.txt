@@ -1,0 +1,5 @@
+# Install base requirements first, then install PyTorch and official SAM 2 repo.
+# SAM 2 requires Python >=3.10, torch >=2.5.1, torchvision >=0.20.1.
+torch>=2.5.1
+torchvision>=0.20.1
+# Then: pip install -e "git+https://github.com/facebookresearch/sam2.git#egg=SAM-2"
