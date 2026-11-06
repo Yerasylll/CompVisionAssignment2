@@ -7,7 +7,7 @@ Three labels: **peace**, **stop**, **thumbs_up**. This version extends the origi
 Use **Python 3.11 or 3.12**, not Python 3.14.
 
 ```bash
-cd HandGesture_A2_SAM21
+cd repository_name
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -71,18 +71,6 @@ The app requires the user to attest they own the image or have permission before
 - **Meta SAM 2.1**: promptable segmentation foundation model, used here for hand masks and background-isolation ablation. The model itself is not trained on your photos in this repository.
 - **Original A1 baseline**: previously reported frozen ResNet-18 feature extraction + logistic regression; its original test-set score is **not directly comparable** with a new-session test score. Re-evaluate on identical held-out images for a fair comparison.
 - **Your contribution**: system integration, gesture mapping, consent UI, landmark-to-box prompting, visualization, paired ablation and evaluation. Distinguish this work from pretrained model development.
-
-## 6. Assignment checklist
-
-- [x] Reuse A1 topic and support original dataset structure
-- [x] Interactive upload/camera, predictions and visual explanations
-- [x] Integrate optional SAM 2.1 and hand segmentation
-- [x] Consent gate and privacy/ethics notice
-- [x] Evaluation and paired ablation scripts
-- [ ] Run and record actual metrics on the untouched 120-image test set
-- [ ] Run SAM 2.1 on your computer and inspect masks
-- [ ] Create final 6–8 page report using real measured outputs and existing A1 training curves
-- [ ] Record 3–5 minute demonstration video and publish GitHub repo
 
 ## Sources
 
